@@ -1,0 +1,54 @@
+* {
+  font-family: "Syne", serif;
+  font-optical-sizing: auto;
+}
+
+/* HEADER */
+#logo{
+  font-weight: 1000;
+  font-size: 2.0rem;
+  margin-left:3rem;
+}
+
+ul{
+  list-style:none;
+  padding-left: 10px;
+}
+
+
+a{
+  color: black;
+}
+
+.about{
+  font-weight: 700;
+}
+.contact{
+  font-weight: 700;
+}
+.lets{
+  padding-left:110px;
+}
+
+.me-image {
+  width: 50%;
+}
+
+/* footer */
+footer {
+  border-top: 2px solid black;
+  margin-top: 2rem;
+}
+
+.contact-text{
+  margin-left:15rem;
+}
+
+h4{
+  margin-left:6rem;
+}
+.write{
+ border: 2px solid black;
+ margin:1rem;
+ padding: 5px;
+}
