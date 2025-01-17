@@ -40,13 +40,16 @@ footer {
   margin-top: 2rem;
 }
 
+/* contact information */
 .contact-text{
   margin-left:15rem;
 }
 
 h4{
-  margin-left:6rem;
+  margin-left:10rem;
 }
+
+/* let's work together */
 .write{
  border: 2px solid black;
  margin:1rem;
