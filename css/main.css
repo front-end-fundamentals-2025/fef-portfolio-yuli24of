@@ -20,6 +20,10 @@ a{
   color: black;
 }
 
+.about-me{
+  width: 70%;
+}
+
 .about{
   font-weight: 700;
 }
