@@ -1,28 +1,68 @@
+
+/* PICTURES */
+
 .work-1{
   width: 100%;
+  transition: transform 0.9s ease-in-out;
 }
+.work-1:hover {
+  animation: hoverEffect 0.9s forwards;
+}
+
 
 .work-2{
   width: 100%;
+  transition: transform 0.9s ease-in-out;
 }
+.work-2:hover {
+  animation: hoverEffect 0.9s forwards;
+}
+
 
 .work-3{
   width: 100%;
+  transition: transform 0.9s ease-in-out;
 }
+.work-3:hover {
+  animation: hoverEffect 0.9s forwards;
+}
+
 
 .work-4{
   width: 150%;
+  transition: transform 0.9s ease-in-out;
 }
+.work-4:hover {
+  animation: hoverEffect 0.9s forwards;
+}
+
 
 .work-5{
   width: 160%;
   margin-left: 40%;
+  transition: transform 0.9s ease-in-out;
 }
+.work-5:hover {
+  animation: hoverEffect 0.9s forwards;
+}
+
+/* HOVEREFFECT  https://chatgpt.com/share/679b8e57-5ba0-8005-91d7-0afd8b0d7dc1*/ 
+@keyframes hoverEffect {
+  0% {
+    transform: translateY(o);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* footer */
 footer {
   border-top: 2px solid black;
   margin-top: 5%;
 }
 
+/* GRID */
 main{
   display:grid;
   grid-template-columns: repeat(6, 1fr);
@@ -39,6 +79,7 @@ main{
   margin-bottom: 16%;
   margin-top: 7%;
   }
+
 
   /* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {

@@ -13,6 +13,8 @@
   text-align: center;
 }
 
+/* RESPONSIVE DESIGN */
+
 @media screen and (max-width: 768px) {
   .work-1 {
     width: 80%; 
