@@ -7,22 +7,34 @@
 #logo{
   font-weight: 1000;
   font-size: 2.0rem;
-  margin-left:3rem;
+  display: flex;
+  justify-self: center;
+  
 }
-
-ul{
+ /* LIST */
+.items-header{
   list-style:none;
   padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 50PX;
 }
-
 
 a{
   color: black;
 }
-
-.about-me{
-  width: 70%;
+/* PICTURES HOME */
+.about-me {
+  width: 60%;
+  max-width: 500px; 
+  display: grid;
+  margin-left: 2.5%; 
+  font-size: 16px; 
+  margin-top: 1%;
 }
+
+/* PICTURE CONTACT ME */
+
 
 .about{
   font-weight: 700;
@@ -33,20 +45,28 @@ a{
 .lets{
   padding-left:110px;
 }
+.works{
+  font-weight: 700;
+}
+
+/* IMAGE */
 
 .me-image {
-  width: 50%;
+  width: 40%;
+  display: block;
+  
 }
 
 /* footer */
 footer {
   border-top: 2px solid black;
-  margin-top: 2rem;
+  margin-top: 5%;
 }
 
 /* contact information */
 .contact-text{
-  margin-left:15rem;
+  display: flex;
+  justify-content: center;
 }
 
 h4{
@@ -65,24 +85,28 @@ h4{
   font-size: 25px;
   margin-top: 5rem;
   }
-  .contact-text{
-margin-top: 5rem;
-  }
 
+  .contact-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self:center;
+    margin:0;
+    }
+  
 
   .form-group {
-    margin-bottom: 1.5rem; /* Adds vertical spacing between groups */
+    margin-bottom: 1.5rem; 
   }
   
   label {
-    display: block; /* Ensures label appears above the input */
-    margin-bottom: 0.5rem; /* Adds spacing between label and input */
+    display: block; 
+    margin-bottom: 0.5rem; 
   }
   
   input, textarea {
-    width: 70%; /* Makes inputs full-width */
-    padding: 0.5rem; /* Adds padding inside the input fields */
-    font-size: 1rem; /* Improves readability */
+    width: 70%; 
+    padding: 0.5rem; 
+    font-size: 1rem; 
   }
   
   button {
@@ -98,3 +122,90 @@ margin-top: 5rem;
   button:hover {
     background-color: #b0b0b0; 
   }
+
+  /* GRID MAIN */
+header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.column {
+  display: grid;
+  justify-content:center;
+}
+h1{
+  display: grid;
+  justify-content:left ;
+  margin-left: 2.5%;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+
+.items {
+  list-style: none;
+  font-weight: 600;
+  display: flex; 
+  gap: 60px; 
+}
+ .background-contact{
+  width: 40%;
+ }
+
+ /* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  #logo {
+    font-size: 1.5rem;
+  }
+
+  .items-header {
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+  }
+
+  h4 {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .contact-form {
+    font-size: 20px;
+    margin-top: 3rem;
+  }
+
+  .contact-items {
+    grid-template-columns: 1fr;
+  }
+
+  .background-contact {
+    width: 30rem;
+    height: auto;
+  }
+
+  .about-me {
+    width: 90%;
+    text-align: left;
+    margin: auto;
+  }
+
+  .me-image {
+    width: 80%;
+  }
+
+  .items {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+  
+  
+  
+  
+
+
+
+
+
+ 
